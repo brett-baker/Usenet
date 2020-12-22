@@ -81,7 +81,7 @@ namespace Usenet.Nntp.Models
         /// Returns the hash code for this instance.
         /// </summary>
         /// <returns>A 32-bit signed integer hash code.</returns>
-        public override int GetHashCode() => HashCode.Start
+        public override int GetHashCode() => Usenet.Util.HashCode.Start
             .Hash(Number)
             .Hash(MessageId)
             .Hash(Groups);
